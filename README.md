@@ -1,7 +1,7 @@
 Amazon Cloudsearch Client Java
 ==============================
 
-Amazon CloudSearch Client for Document Service and Searching. Amazon SDK does not provide java client for document indexing and seacrching. This simple library is created to fill that gap.
+Amazon CloudSearch Client for Document Service and Searching. Amazon SDK does not provide java client for document indexing and searching. This simple library is created to fill that gap.
 
 Instantiate Client
 ==================
@@ -9,8 +9,8 @@ aws.services.cloudsearchv2.AmazonCloudSearchClient extends the official com.amaz
 ```java
 AWSCredentials awsCredentials = new BasicAWSCredentials(awsAccessKey, awsSecretKey);;
 AmazonCloudSearchClient client = new AmazonCloudSearchClient(awsCredentials);
-client.setSearchDomain(searchEndpoint);
-client.setDocumentDomain(documentEndpoint);
+client.setSearchEndpoint(searchEndpoint);
+client.setDocumentEndpoint(documentEndpoint);
 ```
 
 Adding/Updating Documents
